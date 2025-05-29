@@ -50,13 +50,7 @@ Tienes un ejemplo útil que quieras compartir? Las contribuciones son bienvenida
 
 ---
 
-## Licencia
-
-Este repositorio está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
----
-
-鉁嶏笍 Autor
+## Autor
 
 Norio  
 Apasionado por el desarrollo de software, la resolución de problemas y el aprendizaje continuo en el mundo de la programación Java?
