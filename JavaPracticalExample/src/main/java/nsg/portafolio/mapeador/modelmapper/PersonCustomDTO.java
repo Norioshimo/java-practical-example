@@ -1,4 +1,4 @@
-package nsg.portafolio.mapeador.ModelMapper;
+package nsg.portafolio.mapeador.modelmapper;
 
 public class PersonCustomDTO {
 

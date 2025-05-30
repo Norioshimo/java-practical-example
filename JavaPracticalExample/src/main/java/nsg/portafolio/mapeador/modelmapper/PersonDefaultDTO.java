@@ -1,6 +1,6 @@
-package nsg.portafolio.mapeador.ModelMapper;
+package nsg.portafolio.mapeador.modelmapper;
 
-public class Person {
+public class PersonDefaultDTO {
 
     private Long id;
 
@@ -10,20 +10,17 @@ public class Person {
 
     private String email;
 
-    private byte age;
+    private String estado;
 
-    private Character gender;
-
-    public Person() {
+    public PersonDefaultDTO() {
     }
 
-    public Person(Long id, String name, String lastName, String email, byte age, Character gender) {
+    public PersonDefaultDTO(Long id, String name, String lastName, String email, String estado) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
-        this.age = age;
-        this.gender = gender;
+        this.estado = estado;
     }
 
     public Long getId() {
@@ -58,25 +55,17 @@ public class Person {
         this.email = email;
     }
 
-    public byte getAge() {
-        return age;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setAge(byte age) {
-        this.age = age;
-    }
-
-    public Character getGender() {
-        return gender;
-    }
-
-    public void setGender(Character gender) {
-        this.gender = gender;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     @Override
     public String toString() {
-        return "Person{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", age=" + age + ", gender=" + gender + '}';
+        return "PersonDefaultDTO{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", estado=" + estado + '}';
     }
 
 }

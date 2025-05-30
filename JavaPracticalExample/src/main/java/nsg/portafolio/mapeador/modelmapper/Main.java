@@ -1,4 +1,4 @@
-package nsg.portafolio.mapeador.ModelMapper;
+package nsg.portafolio.mapeador.modelmapper;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;

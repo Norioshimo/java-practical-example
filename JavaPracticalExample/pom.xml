@@ -29,6 +29,14 @@
             <artifactId>mapstruct</artifactId>
             <version>${org.mapstruct.version}</version>
         </dependency>
+        
+        <!--Libreria de Lombook-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.38</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     
     <build>
@@ -41,15 +49,23 @@
                     <source>17</source> <!-- depending on your project -->
                     <target>17</target> <!-- depending on your project -->
                     <annotationProcessorPaths>
+                        <!-- MapStruct -->
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
                             <version>${org.mapstruct.version}</version>
                         </path>
+                        <!-- Lombok -->
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.38</version>
+                        </path>
                         <!-- other annotation processors -->
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+             
         </plugins>
     </build>
     

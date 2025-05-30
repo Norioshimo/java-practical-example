@@ -17,7 +17,8 @@ public class Main {
         System.out.println("Person: " + person.toString());
 
         System.out.println("Mapear y retornar el DTO");
-        PersonDefaultDTO pfDTO = PersonMapper.INSTANCE.personToPersonDefaultDto(person);
+
+        PersonDefaultDTO pfDTO = PersonMapper.INSTANCE.personToPersonDefaultDTO(person);
         System.out.println("pfDTO: " + pfDTO.toString());
 
         System.out.println("========================MODEL CUSTOM=============================");

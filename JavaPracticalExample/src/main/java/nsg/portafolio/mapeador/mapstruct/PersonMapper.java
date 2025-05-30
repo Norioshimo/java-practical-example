@@ -14,13 +14,13 @@ public interface PersonMapper {
 
     PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
-    PersonDefaultDTO personToPersonDefaultDto(Person person);
+    PersonDefaultDTO personToPersonDefaultDTO(Person person);
 
-    @Mapping(source = "id",target = "idDTO")
-    @Mapping(source = "name",target = "nameDTO")
-    @Mapping(source = "lastName",target = "lastNameDTO")
-    @Mapping(source = "email",target = "emailDTO")
-    @Mapping(source = "age",target = "ageDTO")
+    @Mapping(source = "id", target = "idDTO")
+    @Mapping(source = "name", target = "nameDTO")
+    @Mapping(source = "lastName", target = "lastNameDTO")
+    @Mapping(source = "email", target = "emailDTO")
+    @Mapping(source = "age", target = "ageDTO")
+    @Mapping(source = "gender", target = "genderDTO")
     PersonCustomDTO personToPersonCustomDTO(Person person);
-
 }
