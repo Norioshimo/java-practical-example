@@ -1,5 +1,7 @@
 package nsg.portafolio.mapeador.modelmapper;
 
+import java.util.List;
+
 public class Person {
 
     private Long id;
@@ -13,6 +15,8 @@ public class Person {
     private byte age;
 
     private Character gender;
+
+    private List<Direccion> direccionesList;
 
     public Person() {
     }
@@ -74,9 +78,17 @@ public class Person {
         this.gender = gender;
     }
 
+    public List<Direccion> getDireccionesList() {
+        return direccionesList;
+    }
+
+    public void setDireccionesList(List<Direccion> direccionesList) {
+        this.direccionesList = direccionesList;
+    }
+
     @Override
     public String toString() {
-        return "Person{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", age=" + age + ", gender=" + gender + '}';
+        return "Person{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", age=" + age + ", gender=" + gender + ", direccionesList=" + direccionesList + '}';
     }
 
 }

@@ -1,5 +1,7 @@
 package nsg.portafolio.mapeador.modelmapper;
 
+import java.util.List;
+
 public class PersonDefaultDTO {
 
     private Long id;
@@ -11,6 +13,8 @@ public class PersonDefaultDTO {
     private String email;
 
     private String estado;
+
+    private List<DireccionDTO> direccionesList;
 
     public PersonDefaultDTO() {
     }
@@ -63,9 +67,17 @@ public class PersonDefaultDTO {
         this.estado = estado;
     }
 
+    public List<DireccionDTO> getDireccionesList() {
+        return direccionesList;
+    }
+
+    public void setDireccionesList(List<DireccionDTO> direccionesList) {
+        this.direccionesList = direccionesList;
+    }
+
     @Override
     public String toString() {
-        return "PersonDefaultDTO{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", estado=" + estado + '}';
+        return "PersonDefaultDTO{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", estado=" + estado + ", direccionesList=" + direccionesList + '}';
     }
 
 }

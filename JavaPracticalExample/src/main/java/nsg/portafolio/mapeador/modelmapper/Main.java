@@ -1,11 +1,12 @@
 package nsg.portafolio.mapeador.modelmapper;
 
+import java.util.ArrayList;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;
 
-
 /**
  * Documentación de ModelMapper https://modelmapper.org/
+ *
  * @author Acer
  */
 public class Main {
@@ -19,6 +20,11 @@ public class Main {
 
         System.out.println("Inicilizar objeto person con datos.");
         Person person = new Person(1L, "Norio", "Gyotoku", "norio@gmail.com", (byte) 25, 'M');
+
+        person.setDireccionesList(new ArrayList<>());
+        person.getDireccionesList().add(new Direccion(1, "Direccion 1", "San Lorenzo"));
+        person.getDireccionesList().add(new Direccion(2, "Direccion 2", "Fernando de la Mora"));
+
         System.out.println("Person: " + person.toString());
 
         System.out.println("Mapear y retornar el DTO");
@@ -37,7 +43,7 @@ public class Main {
 
         System.out.println("Mapear y retornar el DTO");
         PersonCustomDTO pcDto = propertyMapper.map(person);
-        
+
         System.out.println("pcDto: " + pcDto.toString());
 
         System.out.println("Final de uso Model Mapper");
