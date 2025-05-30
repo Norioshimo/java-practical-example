@@ -10,10 +10,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@EqualsAndHashCode
+@EqualsAndHashCode(of = {"id"})
 @AllArgsConstructor
 @NoArgsConstructor
 public class TiposProductos {
+
     private Integer id;
     private String nombre;
 }
