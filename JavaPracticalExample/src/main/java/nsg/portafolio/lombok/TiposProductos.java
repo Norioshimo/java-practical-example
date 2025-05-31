@@ -1,4 +1,4 @@
-package nsg.portafolio.mapeador.lombok;
+package nsg.portafolio.lombok;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

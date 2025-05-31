@@ -1,4 +1,4 @@
-package nsg.portafolio.mapeador.lombok;
+package nsg.portafolio.lombok;
 
 import java.math.BigDecimal;
 
