@@ -40,6 +40,19 @@ public class Main {
         lista.stream()
                 .sorted(Comparator.comparing(Persona::getId))
                 .forEach(System.out::println);
+
+
+        System.out.println("============================================================================4- Ordenar la lista usando NaturalOrder");
+        List<String> frutas = new ArrayList<>(List.of("Banana", "Manzana", "Kiwi"));
+
+        // Orden alfabético
+        frutas.sort(Comparator.naturalOrder());
+        System.out.println("Orden alfabetico: "+frutas);
+
+        // Orden inverso
+        frutas.sort(Comparator.reverseOrder());
+
+        System.out.println("Orden Iverso: "+frutas);
         
 
         System.out.println("Final de Streams con objecto creados");
