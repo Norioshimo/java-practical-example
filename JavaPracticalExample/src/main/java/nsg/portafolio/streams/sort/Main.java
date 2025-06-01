@@ -53,7 +53,7 @@ public class Main {
         frutas.sort(Comparator.reverseOrder());
 
         System.out.println("Orden Iverso: "+frutas);
-        
+
 
         System.out.println("Final de Streams con objecto creados");
     }
